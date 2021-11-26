@@ -1,2 +1,6 @@
-package abstractFactory;public class OSFactory {
+package abstractFactory;
+
+public interface OSFactory {
+    Phone create(ManufacturerType manufacturerType);
+
 }

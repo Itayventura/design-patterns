@@ -1,2 +1,6 @@
-package abstractFactory;public class OSType {
+package abstractFactory;
+
+public enum OSType {
+    ANDROID,
+    WINDOWS
 }

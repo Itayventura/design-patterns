@@ -1,2 +1,5 @@
-package abstractFactory;public class Phone {
+package abstractFactory;
+
+public interface Phone {
+    void display();
 }

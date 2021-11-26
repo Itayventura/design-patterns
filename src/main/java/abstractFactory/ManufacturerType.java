@@ -1,2 +1,8 @@
-package abstractFactory;public class ManufacturerType {
+package abstractFactory;
+
+public enum ManufacturerType {
+    GOOGLE,
+    ONEPLUS,
+    LENOVO,
+    MICROSOFT
 }
