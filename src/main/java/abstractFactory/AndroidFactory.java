@@ -10,7 +10,12 @@ public class AndroidFactory implements OSFactory {
                 return new OnePlus5T();
 
             default:
-                return null;
+                return createDefault();
         }
+    }
+
+    @Override
+    public Phone createDefault() {
+        return new GooglePhone();
     }
 }

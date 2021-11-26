@@ -9,7 +9,12 @@ public class WindowsFactory implements OSFactory {
             case MICROSOFT:
                 return new MicrosoftPhone();
             default:
-                return null;
+                return createDefault();
         }
+    }
+
+    @Override
+    public Phone createDefault() {
+        return new LenovoPhone();
     }
 }

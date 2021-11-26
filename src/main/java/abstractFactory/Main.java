@@ -1,8 +1,6 @@
 package abstractFactory;
 
-import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Main {
 
@@ -17,6 +15,15 @@ public class Main {
                 .forEach(Phone::display);
         androidTypes.stream()
                 .map(androidFactory::create)
+                .forEach(Phone::display);
+
+        System.out.println("\nFIRST PART IS DONE \n");
+        System.out.println("\nDEFAULT PHONES: \n");
+
+        List.of(OSType.WINDOWS, OSType.ANDROID)
+                .stream()
+                .map(AbstractPhoneFactory::getFactory)
+                .map(OSFactory::createDefault)
                 .forEach(Phone::display);
     }
 }
