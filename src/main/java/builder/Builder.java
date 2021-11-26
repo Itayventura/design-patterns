@@ -21,7 +21,7 @@ public class Builder {
         private String str;
         private Double d;
 
-        BuilderBuilder(){}
+        public BuilderBuilder(){}
 
         public BuilderBuilder id(Integer id){
             this.id = id;
