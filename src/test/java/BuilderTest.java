@@ -25,5 +25,8 @@ class BuilderTest {
         assertEquals(1, builder.getId());
         assertEquals(1.0, builder.getD());
         assertEquals("1", builder.getStr());
+        builderBuilder = new Builder.BuilderBuilder();
+        Builder builder2 = builderBuilder.id(1).d(1.0).build();
+        System.out.println(builder2);
     }
 }
